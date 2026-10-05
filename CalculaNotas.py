@@ -1,3 +1,5 @@
+import funcoes_media
+
 print("Programa para calcular notas de alunos.")
 print()
 
@@ -10,7 +12,7 @@ p2 = 3
 p3 = 5
 p4 = p1 + p2 + p3
 
-nota = (a1 * p1 + a2 * p2 + a3 * p3) / p4
+nota = funcoes_media.media_ponderada(a1, a2, a3, p1, p2, p3, p4)
 
 print()
 print(f"A média das suas notas: {nota:.2f}")
